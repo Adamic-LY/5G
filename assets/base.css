@@ -4,7 +4,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'microsoft yahei';
+  font-family: PingFangSC-Regular;
+  letter-spacing: 1px;
 }
 html,
 body {
