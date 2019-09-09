@@ -8,6 +8,7 @@
     <title>意向论坛收集</title>
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/intention.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -47,5 +48,13 @@
         <a href="#">下一步</a>
     </div>
 </body>
+<script>
+    let $selects = $('span');
+    let change;
+    $selects.each(function(i, el) {
+        change = el.className;
+        console.log(i, change, el);
+    })
+</script>
 
 </html>
