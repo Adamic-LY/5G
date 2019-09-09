@@ -1,0 +1,67 @@
+.selected {
+  background-color: #588ffe;
+}
+.unselected {
+  border-radius: 0.3rem;
+  border: 2px solid #d2d2d2;
+}
+#container {
+  width: 100%;
+  margin-top: 2rem;
+}
+#container .day {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+#container .day .date {
+  padding-left: 0.8rem;
+  width: 100%;
+  height: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-left: 0.1rem solid #588ffe;
+}
+#container .day .title {
+  width: 100%;
+  height: 2rem;
+  position: relative;
+}
+#container .day .title span {
+  display: block;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  line-height: 1rem;
+  color: #fff;
+  top: 0.2rem;
+}
+#container .day .title span,
+#container .day .title h4 {
+  position: absolute;
+}
+#container .day .title h4 {
+  left: 2rem;
+  font-weight: normal;
+}
+#container .day .title:nth-child(4) {
+  margin-top: 2rem;
+}
+#container .day .content {
+  margin-left: 2rem;
+}
+#next {
+  width: 100%;
+  height: 3rem;
+}
+#next a {
+  display: block;
+  height: 3rem;
+  width: 100%;
+  background-color: #74a6fe;
+  text-align: center;
+  line-height: 3rem;
+  border-radius: 2rem;
+  color: #fff;
+}
