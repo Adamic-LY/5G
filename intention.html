@@ -21,12 +21,12 @@
                 <span class="selected">✔</span>
                 <h4>论坛名称</h4>
             </div>
-            <div class="content">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
+            <div class="content bottBor">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
             <div class="title">
                 <span class="unselected">✔</span>
                 <h4>论坛名称</h4>
             </div>
-            <div class="content">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
+            <div class="content bottBor">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
         </div>
         <div class="day">
             <div class="date">
@@ -36,15 +36,15 @@
                 <span class="selected">✔</span>
                 <h4>论坛名称</h4>
             </div>
-            <div class="content">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
+            <div class="content bottBor">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
             <div class="title">
                 <span class="unselected">✔</span>
                 <h4>论坛名称</h4>
             </div>
-            <div class="content">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
+            <div class="content bottBor">论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论坛描述论</div>
         </div>
     </div>
-    <div id="next">
+    <div id="next" class="btn">
         <a href="#">下一步</a>
     </div>
 </body>
@@ -53,12 +53,6 @@
     let $btn = $('a');
     $selecteds.on('click', function() {
         this.className = (this.className == 'selected' ? 'unselected' : 'selected');
-        if ($selecteds[0].className == 'unselected' && $selecteds[1].className == 'unselected' && $selecteds[2].className == 'unselected' && $selecteds[3].className == 'unselected') {
-            $btn.addClass('disabled');
-            $btn.on('click', function() {
-                alert('请选择论坛')
-            })
-        }
     })
 </script>
 
