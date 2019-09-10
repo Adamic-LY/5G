@@ -8,6 +8,7 @@
     <title>门票选择</title>
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/tickets.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -52,5 +53,19 @@
         <a href="#">去支付</a>
     </div>
 </body>
+<script>
+    let $selecteds = $('.round');
+    let $btn = $('a');
+    $selecteds.on('click', function() {
+        this.className = (this.className == 'round left show' ? 'round left hide' : 'round left show');
+        if ($selecteds[0].className == 'round left hide' && $selecteds[1].className == 'round left hide') {
+            $btn.addClass('disabled');
+            $btn.on('click', function() {
+                alert('请选择门票')
+            })
+        }
+    });
+    console.log($selecteds[0].className, $selecteds[1].className);
+</script>
 
 </html>

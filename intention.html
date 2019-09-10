@@ -49,11 +49,16 @@
     </div>
 </body>
 <script>
-    let $selects = $('span');
-    let change;
-    $selects.each(function(i, el) {
-        change = el.className;
-        console.log(i, change, el);
+    let $selecteds = $('span');
+    let $btn = $('a');
+    $selecteds.on('click', function() {
+        this.className = (this.className == 'selected' ? 'unselected' : 'selected');
+        if ($selecteds[0].className == 'unselected' && $selecteds[1].className == 'unselected' && $selecteds[2].className == 'unselected' && $selecteds[3].className == 'unselected') {
+            $btn.addClass('disabled');
+            $btn.on('click', function() {
+                alert('请选择论坛')
+            })
+        }
     })
 </script>
 
