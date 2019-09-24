@@ -8,18 +8,29 @@
     <title>5G大会</title>
     <link rel="stylesheet" href="./assets/base.css">
     <link rel="stylesheet" href="./assets/failPay.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
     <div id="header">
         <div id="success">
-            <img src="./assets/images/shibaicopy@2x.png" alt="">
+            <img src="./assets/images/shibaicopy@2x.png">
             <p>支付失败</p>
         </div>
     </div>
 
-    <input type="button" value="取消支付" class="left">
-    <input type="button" value="重新支付" class="right togo">
+    <input type="button" value="取消支付" class="left" id="cancel">
+    <input type="button" value="重新支付" class="right togo" id="rePay">
 </body>
+<script>
+    let $cancel = $('#cancel');
+    let $rePay = $('#rePay');
+    $cancel.on('click', function() {
+        console.log('取消支付');
+    });
+    $rePay.on('click', function() {
+        console.log('重新支付');
+    })
+</script>
 
 </html>
