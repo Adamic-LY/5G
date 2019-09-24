@@ -122,8 +122,10 @@
 </body>
 <script>
     let $tickets = $('.ticket');
+    // console.log($tickets)
     $tickets.each(function() {
         $(this).click(function() {
+            // console.log($(this).index())
             $(this).children('.select').addClass('show').removeClass('hide');
             $(this).siblings().children('.select').addClass('hide').removeClass('show');
         })
